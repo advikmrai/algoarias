@@ -4,7 +4,7 @@ import {Mutex} from 'async-mutex';
 /*Prevents globalThis being reported as an error by eslint*/
 /*global globalThis*/
 
-// Singleton
+// Singleton <-- w
 var aiSdkInstance: any;
 var source: any;
 
@@ -19,7 +19,7 @@ async function initAiSdk() {
     throw new Error("An instance of the AI-SDK is already running.");
   }
   source = new Source();
-
+ 
   aiSdkInstance = await globalThis.CY.loader()
     // TODO INSERT YOUR LICENSE KEY HERE
     .licenseKey("skffbac81e593cdb087c739fff517bc75b6416773c2153") // <--- ##############

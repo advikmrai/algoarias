@@ -14,7 +14,7 @@
   <script type="application/javascript" src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
 <link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
 <body> 
-  <app-root></app-root>
+  <app-root> </app-root>
 <script src="runtime.490743c67fce641d.js" type="module"></script><script src="polyfills.8bf96eee872da4a7.js" type="module"></script><script src="main.eabdf06a6e1e5a02.js" type="module"></script>
 <h1>Spotify Web Playback SDK Quick Start</h1>
     <button id="togglePlay">Toggle Play</button>
@@ -32,9 +32,9 @@
             // Ready
             player.addListener('ready', ({ device_id }) => {
                 console.log('Ready with Device ID', device_id);
-            });
+            }); 
 
-            // Not Ready
+            // Not  Ready
             player.addListener('not_ready', ({ device_id }) => {
                 console.log('Device ID has gone offline', device_id);
             });
