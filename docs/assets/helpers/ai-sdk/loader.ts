@@ -1,4 +1,16 @@
 
+// Import library module
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+
+@NgModule({
+  imports: [
+    // ...
+    NgxAudioPlayerModule
+  ]
+})
+export class AppModule { }
+
+
 import {Mutex} from 'async-mutex';
 
 /*Prevents globalThis being reported as an error by eslint*/
